@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+header {
+  background: linear-gradient(to right, #34495e, #16a085);
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+content {
+  display: block;
+  margin: 1rem;
+}
+
+content h1 {
+  background-image: linear-gradient(to right, #34495e 0%, #16a085 70%, #16a085 100%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+content h1::after {
+  background-image: linear-gradient(to right, #34495e 0%, #16a085 70%, #16a085 100%);
+  bottom: -4px;
+  content: '';
+  height: 5px;
+  left: 0;
+  position: absolute;
+  width: 15rem;
+}
+
+/* content ul {} */
+
+content ul li {
+  list-style: none;
+}
+
+content ul li::before {
+  color: #16a085;
+  content: "→";
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+content skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+content skills ul li {
+  margin-bottom: 0;
+  border-left: 3px solid #16a085;
+  padding: 1rem 0 1rem 1.5rem;
+  position: relative;
+}
+
+content skills ul li::before {
+  color: #16a085;
+  content: "▹";
+  font-size: 1.5rem;
+  left: 0;
+  position: absolute;
+}
+
+content skills ul ul li {
+  border-left: none;
+  padding: 0;
+}
+
+content skills ul ul li::before {
+  color: #16a085;
+  content: "→";
+  font-size: 1.2rem;
+  left: 0;
+  position: relative;
+}
+
+content skills ul li skill {
+  color: #1a2a44;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+content skills ul li skill-desc {
+  font-size: 1rem;
+  color: #5a6a82;
+  display: block;
+  margin-top: 0.3rem;
+}
