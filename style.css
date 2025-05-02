@@ -99,6 +99,18 @@ content skills ul li skill-desc {
   margin-top: 0.3rem;
 }
 
+footer {
+  background: linear-gradient(to right, #34495e, #16a085);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+footer a {
+  color: #ffffff;
+}
+
 #typing {
   position: relative;
   white-space: nowrap;
