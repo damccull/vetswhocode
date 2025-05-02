@@ -57,6 +57,7 @@ content skills ul {
 }
 
 content skills ul li {
+  margin-left: 3rem;
   margin-bottom: 0;
   border-left: 3px solid #16a085;
   padding: 1rem 0 1rem 1.5rem;
