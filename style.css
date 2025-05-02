@@ -98,3 +98,19 @@ content skills ul li skill-desc {
   display: block;
   margin-top: 0.3rem;
 }
+
+#typing {
+  position: relative;
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+#typing::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+  display: none;
+}
+
+#typing.typing::after {
+  display: inline;
+}

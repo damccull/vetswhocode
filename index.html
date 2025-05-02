@@ -11,7 +11,7 @@
 <body>
   <header>
     <h1>David McCullough</h1>
-    <h2>Veteran | Full-Stack Developer</h2>
+    <h2 id="typing">Veteran | Full-Stack Developer</h2>
   </header>
   <content>
     <section>
@@ -113,6 +113,26 @@
   </content>
   <footer>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Typing effect
+      const typingElement = document.getElementById('typing');
+      const text = typingElement.textContent;
+      typingElement.textContent = '';
+      typingElement.classList.add('typing');
+      let i = 0;
+      const type = () => {
+        if (i < text.length) {
+          typingElement.textContent += text[i];
+          i++;
+          setTimeout(type, 100);
+        } else {
+          typingElement.classList.remove('typing');
+        }
+      };
+      setTimeout(type, 500);
+    });
+  </script>
 </body>
 
 </html>
